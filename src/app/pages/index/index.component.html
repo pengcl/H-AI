@@ -1,0 +1,44 @@
+<div class="banner">
+  <swiper [config]="config">
+    <div *ngFor="let item of banners" class="banner-item" [ngStyle]="{'background-image':'url(' + item + ')'}"></div>
+  </swiper>
+</div>
+<div class="index-wrap row">
+  <div class="search-form">
+    <div class="search-option">
+      <ul class="option-list">
+        <li (click)="option('0')" class="option-item"><i class="icons {{searchOption === '0' ? 'icons-radiobox' : 'icons-round'}}"></i><span>全部</span></li>
+        <li (click)="option('1')" class="option-item"><i class="icons {{searchOption === '1' ? 'icons-radiobox' : 'icons-round'}}"></i><span>企业</span></li>
+        <li (click)="option('2')" class="option-item"><i class="icons {{searchOption === '2' ? 'icons-radiobox' : 'icons-round'}}"></i><span>商标</span></li>
+        <li (click)="option('3')" class="option-item"><i class="icons {{searchOption === '3' ? 'icons-radiobox' : 'icons-round'}}"></i><span>专利</span></li>
+        <li (click)="option('4')" class="option-item"><i class="icons {{searchOption === '4' ? 'icons-radiobox' : 'icons-round'}}"></i><span>高新科技项目</span></li>
+      </ul>
+    </div>
+    <div class="search-wrap">
+      <div class="search-input">
+        <input type="text" id="key" name="key" placeholder="请输入您需要搜索的企业名称、商标、专利、高新科技项目等关键词"/>
+      </div>
+      <div class="search-btn">
+        <button class="btn btn-primary">搜索</button>
+      </div>
+    </div>
+    <div class="search-tag">
+      <div class="tag-label">热点搜索：</div>
+      <ul class="tag-list">
+        <li class="tag-item"><a href="javascript:;">小米</a></li>
+        <li class="tag-item"><a href="javascript:;">鹤年堂医药</a></li>
+        <li class="tag-item"><a href="javascript:;">康佳集团</a></li>
+        <li class="tag-item"><a href="javascript:;">开开视界</a></li>
+        <li class="tag-item"><a href="javascript:;">鹤年堂电子商务</a></li>
+        <li class="tag-item"><a href="javascript:;">鹤年堂中医医院</a></li>
+        <li class="tag-item"><a href="javascript:;">鹤年堂大药房</a></li>
+        <li class="tag-item"><a href="javascript:;">鹤年堂养元健康</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section section-service">
+    <h2 class="title">知识产权注册、申请服务</h2>
+    <div class="section-container"></div>
+  </div>
+</div>

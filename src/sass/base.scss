@@ -1,0 +1,21 @@
+body {
+  min-width: 1280px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  width: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+}
